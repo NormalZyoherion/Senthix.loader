@@ -16284,7 +16284,7 @@ cmd_library.add({'seatbring', 'sbring'}, 'bring a player using a seat tool', {
 	end
 end)
 
-cmd_library.add({'supermanfly'}, 'sfly - feel like be a superman', {}, function()
+cmd_library.add({'supermanfly'}, 'feel like be a superman', {}, function()
 	notify('mom im popular', 'loading', 1)
 	local success, err = pcall(function()
 		loadstring(game:HttpGet('https://absent.wtf/supermanfly.lua'))()
@@ -16293,6 +16293,17 @@ cmd_library.add({'supermanfly'}, 'sfly - feel like be a superman', {}, function(
 		notify('im so unpopular', 'failed to load: ' .. tostring(err), 2)
 	end
 end)
+
+cmd_library.add({'betteraimlock'}, 'UNIVERSAL WORK ON ANY GAME', {}, function()
+	notify('betteraimlock:', 'loading', 1)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet('https://absent.wtf/aimlock.lua'))()
+	end)
+	if not success then
+		notify('im so unpopular', 'failed to load: ' .. tostring(err), 2)
+	end
+end)
+
 
 
 -- chat cmds
