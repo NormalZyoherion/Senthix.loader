@@ -16304,6 +16304,16 @@ cmd_library.add({'betteraimlock'}, 'UNIVERSAL WORK ON ANY GAME', {}, function()
 	end
 end)
 
+cmd_library.add({'antivcban'}, 'yeh (unban vc) [WARNING: ITS A THIRD-PARTY TOOL]', {}, function()
+	notify('wait', 'loading dex', 1)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/KxWvRGYN'))()
+	end)
+	if not success then
+		notify('failed', 'failed to load dex: ' .. tostring(err), 2)
+	end
+end)
+
 
 
 -- chat cmds
