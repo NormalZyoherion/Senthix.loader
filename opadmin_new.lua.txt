@@ -16334,6 +16334,16 @@ cmd_library.add({'possaver'}, 'yeh (good for autofarm)', {}, function()
 	end
 end)
 
+cmd_library.add({'uafling'}, 'yeh (good for game that have many block )', {}, function()
+	notify('wait', 'loading gui', 1)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/QrJxtjc0'))()
+	end)
+	if not success then
+		notify('failed', 'failed to load: ' .. tostring(err), 2)
+	end
+end)
+
 
 
 
