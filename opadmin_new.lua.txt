@@ -16324,6 +16324,16 @@ cmd_library.add({'betterfling'}, 'yeh (better GUI)', {}, function()
 	end
 end)
 
+cmd_library.add({'possaver'}, 'yeh (good for autofarm)', {}, function()
+	notify('wait', 'loading possaver gui', 1)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/V3krZgyw'))()
+	end)
+	if not success then
+		notify('failed', 'failed to load: ' .. tostring(err), 2)
+	end
+end)
+
 
 
 
