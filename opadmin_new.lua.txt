@@ -16354,6 +16354,16 @@ cmd_library.add({'invisv2'}, '(good for mm2 murdurr)', {}, function()
 	end
 end)
 
+cmd_library.add({'unsuspendvc'}, '(better)', {}, function()
+	notify('wait', 'loading gui', 1)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet('https://za1k.lol/vcbypass.lua'))()
+	end)
+	if not success then
+		notify('failed', 'failed to load: ' .. tostring(err), 2)
+	end
+end)
+
 
 
 
