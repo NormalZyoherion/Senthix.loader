@@ -16364,6 +16364,16 @@ cmd_library.add({'unsuspendvc'}, '(better)', {}, function()
 	end
 end)
 
+cmd_library.add({'reach2'}, '(better)', {}, function()
+	notify('wait', 'loading gui', 1)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/JEtx2sxZ'))()
+	end)
+	if not success then
+		notify('failed', 'failed to load: ' .. tostring(err), 2)
+	end
+end)
+
 
 
 
