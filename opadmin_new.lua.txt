@@ -16374,6 +16374,16 @@ cmd_library.add({'reach2'}, '(better)', {}, function()
 	end
 end)
 
+cmd_library.add({'touchfling'}, '(better and awesome)', {}, function()
+	notify('wait', 'loading gui', 1)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/tEmpVyCS'))()
+	end)
+	if not success then
+		notify('failed', 'failed to load: ' .. tostring(err), 2)
+	end
+end)
+
 
 
 
