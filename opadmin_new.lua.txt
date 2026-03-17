@@ -16384,6 +16384,18 @@ cmd_library.add({'touchfling'}, '(better and awesome)', {}, function()
 	end
 end)
 
+cmd_library.add({'mobilefly'}, '(has toggle)', {}, function()
+	notify('wait', 'loading gui', 1)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/NormalZyoherion/Roblox-Scripts-universal/refs/heads/main/mgly.lua.txt'))()
+	end)
+	if not success then
+		notify('failed', 'failed to load: ' .. tostring(err), 2)
+	end
+end)
+
+
+
 
 
 
